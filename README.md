@@ -118,9 +118,24 @@ Following are properties of OT
 - Client reapply all new changes received from the server which include the last change
 ![](assets/json-patch-ot-step-5.png)
 https://github.com/ThreadsStyling/json-patch-ot
+## Demo
+https://operational-transformation.github.io/
+## Transformation
+Server understand the intent of operation and it apply transformation.
+![](assets/operation-transformation-1)
+
+![](assets/operation-transformation-2.png)
+
 # Differential Synchronization
 - Used by .git or .svn
 - It require manual intervention
+- Get the diff
+- Apply changes
+- It manages set of all patches with timestamp + author etc
+- Client will wait for server 200, before it modify client copy data
+
+![](assets/differential-synchronization-patch.png)
+
 # Conflict Free Replicated Data Types
 - A family of data structure, where several people are updating same data which at the end merge to single one
 - Should be commutative and idempotent operation
@@ -197,6 +212,9 @@ Following are few sample project using automerge
 - collaborative Pixels of art
 ![](assets/pixel-of-art.png)
 
+# CRDT for Database
+https://www.infoworld.com/article/3305321/when-to-use-a-crdt-based-database.html
 # Reference
 https://www.youtube.com/watch?v=B5NULPSiOGw
 https://www.youtube.com/watch?v=jIR0Ngov7vo
+https://github.com/alangibson/awesome-crdt
